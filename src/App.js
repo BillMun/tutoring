@@ -1,10 +1,14 @@
 import React from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Splash from './components/Splash'
 
 const App = () =>{
     return(
-        <h1>
-            Creating a tutoring website
-        </h1>
+        <div id='main'>
+            <Routes>
+                <Route index element ={<Splash/>}/>
+            </Routes>
+       </div>
     )
 }
 
