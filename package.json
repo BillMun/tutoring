@@ -4,14 +4,12 @@
   "description": "A website to promote Bill Munkacsy's tutoring business",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "author": "Bill Munkacsy",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BillMun/tutoring/issues"
-  },
-  "homepage": "https://github.com/BillMun/tutoring#readme",
   "devDependencies": {
     "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
@@ -21,9 +19,11 @@
     "@babel/runtime": "^7.21.5",
     "babel-loader": "^9.1.2",
     "webpack": "^5.82.0",
+    "webpack-cli": "^5.0.2",
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.21.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
