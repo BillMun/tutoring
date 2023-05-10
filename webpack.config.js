@@ -46,7 +46,11 @@ module.exports={
          * "only" is used if enable Hot Module Replacement without page 
          * refresh as a fallback in case of build failures
          */
+        historyApiFallback: true,
+ 
+
         hot: true ,
+        
         /** "liveReload"
          * disable live reload on the browser. "hot" must be set to false for this to work
         */

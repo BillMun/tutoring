@@ -8,6 +8,7 @@
     "build": "webpack",
     "start": "webpack-dev-server"
   },
+  "homepage": ".",
   "author": "Bill Munkacsy",
   "license": "ISC",
   "devDependencies": {
