@@ -1,0 +1,93 @@
+.navbar {
+    background-color: burlywood;
+    justify-content: space-between;
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+body{
+    background-color: beige;
+}
+.splash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-size: 300%;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+h4{
+    font-size:150%;
+    margin-top: 15px;
+    color: blue;
+}
+#name{
+    float:left;
+    margin:5px;
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.splashAbout{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    
+}
+
+#navItem{
+    font-size: 25px;
+    margin-right: 40px;
+}
+#navItem:hover{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    color:red;
+    /* outline: solid 2px black; */
+    /* box-sizing: 2px 2px 2px 2px white; */   
+}
+
+#profilePhoto{
+    display: flex;
+    max-width: 25%;
+    height: auto;
+    margin: 5px;
+    
+}
+#profilePhoto:hover{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    box-shadow: 10px 10px 5px #888888;
+}
+#photo{
+    max-width: 100%;
+}
+
+
+#splashText{
+    margin-left: 25px;
+    font-size: 22px;
+    max-width: 15%;
+}
+
+#logo{
+    float: left;
+    font-size: 35px;
+    color: black;
+    margin: 10px;
+}
