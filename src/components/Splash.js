@@ -1,43 +1,53 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../scss/splash.scss"
+
 
 export default function Splash(){
 
     return(
-        <div className="splash">
+        <div className="wrapper">
             <h1>
              Zeta Math Tutoring
             </h1>
             <div>
                 <h4>
-                    Specializing in imparting a deep understanding and passion for Mathematics
+                    Imparting a deep understanding and passion for mathematics
                 </h4>
             </div>
-   
-                <div className="splashAbout">
-                    <Link id='profilePhoto' to='/about'>
-                        <img id='photo' src="/BillProfile.jpg" alt="a photo of Bill Munkacsy"/> 
+                <div className="splashContainer">
+                    <div className="contentContainer">
+                    <Link to='/about'>
+                        <img class='photo' id="splashPhoto" src="/BillProfile.jpg" alt="a photo of Bill Munkacsy"/> 
                     </Link>
-                    <p id="splashText"> 
-                        Instructor Bill Munkacsy unlocks his student's potential in Mathematics through engagement and knowledge. 
-                        {'\n'}
+                    <div>
+                        <p id="splashText"> 
+                        Instructor Bill Munkacsy unlocks his students' math potential through engagement and knowledge. 
+                   
                         <p>
-                        Subjects/Services Include:
+                        Math tutoring services in the Charlottesville, VA area include:
                         </p>
-                        <li>SAT/ACT Mathematics</li>
-                        <li>GRE Mathematics</li>
-                        <li>Algebra</li>
-                        <li>Algebra II</li>
-                        <li>Algebra III</li>
-                        <li>Pre-Calculus</li>
-                        <li>Calculus</li>
-                        <li>Geometry</li>
-                        <li>Euclidean Geometry</li>
-                        <li>Middle School Mathematics</li>
-                    </p>
-                    
+                        </p>      
+                        <ul >
+                            <li>SAT/ACT math</li>
+                            <li>GRE math</li>
+                            <li>Algebra</li>
+                            <li>Algebra II</li>
+                            <li>Algebra III</li>
+                            <li>Pre-calculus</li>
+                            <li>Calculus</li>
+                            <li>Geometry</li>
+                            <li>Euclidean geometry</li>
+                            <li>Challenge problems</li>
+                            <li>Project based learning</li>
+                            <li>Problem solving strategies</li>
+                        </ul>         
+                
+                    </div>
+                    </div>
                 </div>
 
         </div>
     )
 }
+

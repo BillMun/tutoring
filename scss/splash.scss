@@ -1,0 +1,108 @@
+$photoPadding: 1rem;
+$textMarginRight: 10rem;
+$largeScreenTextMargin: 5rem;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li{
+  margin-left: .4rem;
+  flex: 0 0 100%;
+  padding-top: .4rem;
+  list-style-type: disc;
+  text-align: left;
+}
+
+h4{
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+  .splashContainer {
+    text-align: center;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+}
+    .photo {
+      width: 55%;
+      padding: $photoPadding;
+      float:right;
+      @media screen and (min-width:1200px){
+        margin-right: 2rem;
+        float: right;
+      }
+      @media screen and (max-width: 600px) {
+        float:none;
+        width: 55%;
+        margin-right: 0;
+        margin-bottom: $photoPadding; 
+      }
+    }
+
+    #splashText {
+      text-align: left;
+      align-items: top;
+      @media screen and (max-width: 600px) {
+        margin-top: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+      }
+    }
+
+    .contentContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+    
+      @media screen and (max-width: 600px) {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    #aboutPhoto{
+        text-align: left;
+        width:30%;
+        height:fit-content;
+        margin-right: 4rem;
+        @media screen and (max-width:600px){
+            width:60%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width:900px) {
+           margin-right:4rem;
+        }
+    }
+
+    .aboutMeText{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: $textMarginRight;
+        @media screen and (max-width:600px){
+            margin-left: .5rem;
+            margin-right:.5rem;
+            
+        }
+        @media screen and (min-width:900px) {
+            margin-left: $largeScreenTextMargin;
+            margin-right: $largeScreenTextMargin
+        }
+    }
+    .title{
+        text-align: left;
+        font-size: 25px;
+
+    }

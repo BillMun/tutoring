@@ -1,0 +1,45 @@
+$link-color: #42a8ca; 
+$link-color-darken: black;
+$navbar-padding-y: .5rem;
+$navlink-padding-y: .5rem;
+$navlink-padding-x: 1rem;
+$navbar-toggler-focus-width:.1rem;
+$border-width: .1rem;
+
+.navbar{
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: $navbar-padding-y;
+    justify-content: space-between;
+}
+#navItem{
+    color: $link-color;
+    font-size: 17px;
+    padding: $navlink-padding-y $navlink-padding-x;
+    @media screen and (max-width:600px) {
+        font-size: 12px;
+    }
+    &:hover{
+        transition: color 1s ease;
+
+        color: $link-color-darken;
+        text-decoration: none;
+    };
+    &:focus{
+    @media screen and (min-width: 600px){
+        text-decoration: none;
+        outline: 0;
+        border: 1.5px solid #f00;
+        border-color: black;
+        color: black;
+        
+    }
+    }
+};
+#name,#logo{
+    font-size: 20px;
+    padding:  $navlink-padding-x;
+
+}

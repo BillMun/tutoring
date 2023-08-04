@@ -18,12 +18,11 @@ body{
 }
 h1{
     font-size: 300%;
-    margin: 10px;
-    margin-bottom: 2px;
+    margin: .1%;
+    margin-bottom: .1%;
 }
 h4{
     font-size:150%;
-    margin-top: 15px;
     color: blue;
 }
 #name{
@@ -38,10 +37,11 @@ h4{
 
 .splashAbout{
     display: flex;
-    flex-direction: row;
+    width:100%;
     align-items: top;
     justify-content: center; 
 }
+
 
 #navItem{
     font-size: 25px;
@@ -59,18 +59,20 @@ h4{
 }
 
 .leftNav{
-    margin-left: 125px;
+    margin-left: 5%;
 }
 
 .rightNav{
-    margin-right: 75px;
+    margin-right: 5%;
 }
 #profilePhoto{
     display: flex;
     max-width: 100%;
-    height: 100%;
-    margin: 5px;
     float:left
+}
+#aboutPhoto{
+    width:25%;
+    height: auto;
 }
 #profilePhoto:hover{
     -o-transition:.5s;
@@ -79,11 +81,6 @@ h4{
     -webkit-transition:.5s;
     transition:.5s;
     box-shadow: 10px 10px 5px #888888;
-}
-#photo{
-    max-width: 800px;
-    max-height: 450px;
-   
 }
 
 .aboutContainer{
@@ -97,12 +94,22 @@ h4{
     justify-content: center;
     align-items: top;
 }
+#aboutMeText{
+    max-width: 15%;
+    font-size: 25px;
+    margin-right: 50px;
+}
+#aboutTitle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #photoAbout{
     display: flex;
-    max-width: 25%;
+    max-width: 15%;
     height: auto;
-    margin: 5px;
+    margin: 20px;
     
 }
 

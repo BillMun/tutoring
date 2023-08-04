@@ -1,0 +1,29 @@
+$footerPadding:.5rem;
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5rem;
+    border-top: 1px solid black;
+    text-align: center;
+    margin-bottom: 1rem;
+    width:100%;
+    @media screen and (max-width:600px) {
+        padding-left: 0;
+        font-size: 12px;
+
+    }
+}
+
+
+.footerItem{
+    padding-left:$footerPadding;
+    padding-right: $footerPadding;
+    text-align: left;
+    @media screen and (max-width:600px) {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
