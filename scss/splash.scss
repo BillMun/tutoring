@@ -33,12 +33,18 @@ h4{
     }
 }
     .photo {
-      width: 55%;
+      width: 45%;
       padding: $photoPadding;
       float:right;
       @media screen and (min-width:1200px){
         margin-right: 2rem;
         float: right;
+      }
+      @media screen and (max-width:1200px) {
+        width: 55%;
+      }
+      @media screen and (max-width:800px) {
+        width:75%;
       }
       @media screen and (max-width: 600px) {
         float:none;

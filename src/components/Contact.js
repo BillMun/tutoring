@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "../../scss/splash.scss"
 
 export default function Contact (){
+
+
     return(
         <div id='wrapper'>
             <div className='splashContainer'>
